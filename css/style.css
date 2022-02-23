@@ -232,7 +232,8 @@ h3 { font-size: 2.4rem; }
 .formulario {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    gap: 2rem;
+    /* gap: 2rem; */
+    margin: 2rem;
 }
 
 .formulario__campo {
@@ -246,6 +247,14 @@ h3 { font-size: 2.4rem; }
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem;
     appearance: none;
+    /* por sacar gap: 2rem; y utilizar margin */
+    margin-bottom: 2rem;
+    margin-right: 0;
+}
+
+/* por sacar gap: 2rem; y utilizar margin */
+.formulario__campo:last-of-type{
+    margin-right: 2rem;
 }
 
 .formulario__submit {
